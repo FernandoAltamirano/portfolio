@@ -1,0 +1,46 @@
+#portfolio {
+  .image {
+    img {
+      background-color: white;
+    }
+  }
+  .container {
+    width: 100%;
+    .more {
+      text-align: center;
+      background-color: transparent;
+      color: var(--principal);
+      border: none;
+      text-decoration: underline;
+      span {
+        margin: auto;
+      }
+    }
+  }
+  .container-projects {
+    background-color: white;
+    padding-top: 100px;
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      margin-left: 2.5em;
+    }
+  }
+  @media (min-width: 1024px) {
+    h1 {
+      margin-left: 7em;
+    }
+    .image {
+      width: 82%;
+    }
+  }
+  @media (min-width: 1440px) {
+    h1 {
+      margin-left: 8em;
+    }
+    .image {
+      width: 88%;
+    }
+  }
+}
