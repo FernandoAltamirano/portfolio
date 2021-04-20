@@ -1,18 +1,10 @@
 #skills {
-  // background-color: white;
-  .image {
-    img {
-      width: 90px;
-      height: 80px;
-      padding: 10px;
-      background-color: white;
-    }
-  }
+  background-color: white;
+
   .content {
     background-color: white;
   }
   .section {
-    width: 90%;
     margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 2em;
@@ -33,12 +25,8 @@
     }
   }
   @media (min-width: 768px) {
-    h1 {
-      margin-left: 2.5em;
-    }
     .section {
-      width: 85%;
-      padding-top: 80px;
+      padding-top: 40px;
       &:nth-child(2) {
         padding-bottom: 80px;
       }
@@ -56,25 +44,6 @@
         .element:nth-child(3n) {
           border-right-color: transparent;
         }
-      }
-    }
-  }
-  @media (min-width: 1024px) {
-    h1 {
-      margin-left: 7em;
-    }
-    .image {
-      width: 82%;
-    }
-    .section {
-      width: 65%;
-    }
-    @media (min-width: 1024px) {
-      h1 {
-        margin-left: 8em;
-      }
-      .image {
-        width: 88%;
       }
     }
   }

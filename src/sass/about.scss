@@ -1,14 +1,10 @@
 #about {
-  .container-about {
-    height: 56vh;
-    background-color: white;
-  }
+  background-color: white;
   .text {
-    width: 90%;
-    padding-top: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     margin: auto;
-    height: 50vh;
-    line-height: 1.3;
+    line-height: 1.4;
     p {
       font-size: 15px;
     }
@@ -18,9 +14,9 @@
       margin: auto;
     }
   }
-  p {
-    font-size: 0.9em;
-  }
+  // p {
+  //   font-size: 0.9em;
+  // }
 
   .button {
     background-color: transparent;
@@ -38,11 +34,13 @@
   }
 
   @media (min-width: 768px) {
-    h1 {
-      margin-left: 2.5em;
-    }
     .text {
-      width: 60%;
+      p {
+        font-size: 17px;
+      }
+      ul {
+        font-size: 15px;
+      }
     }
     .button {
       width: 80%;
@@ -50,33 +48,13 @@
     }
   }
   @media (min-width: 1024px) {
-    h1 {
-      margin-left: 7em;
-    }
-    .image {
-      width: 82%;
-    }
     .text {
-      width: 40%;
       line-height: 1.5;
       padding-top: 3em;
     }
   }
-  @media (min-width: 1024px) {
-    h1 {
-      margin-left: 10em;
-    }
-    .image {
-      width: 82%;
-    }
-  }
+
   @media (min-width: 1440px) {
-    h1 {
-      margin-left: 8em;
-    }
-    .image {
-      width: 88%;
-    }
     .text {
       padding-top: 5em;
       p {

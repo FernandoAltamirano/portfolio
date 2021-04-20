@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import "../sass/home.scss";
+import PhoneIcon from "@material-ui/icons/Phone";
 const Home = () => {
   useEffect(() => {
     new Typed(".typed", {
@@ -35,13 +36,22 @@ const Home = () => {
         <div className="container-typed animate__animated animate__bounceInRight">
           <p className="typed text"></p>
         </div>
-        <Link
-          to="/about"
-          className="button animate__animated animate__bounceIn"
-        >
-          <span>Comencemos</span>
-          <ArrowForwardIcon />
-        </Link>
+        <div className="container-buttons">
+          <Link
+            to="/portfolio"
+            className="button animate__animated animate__bounceIn"
+          >
+            <span>Mis Proyectos</span>
+            <ArrowForwardIcon />
+          </Link>
+          <Link
+            to="/contact"
+            className="button animate__animated animate__bounceIn"
+          >
+            <span>Contáctame</span>
+            <ArrowForwardIcon />
+          </Link>
+        </div>
       </div>
     </section>
   );

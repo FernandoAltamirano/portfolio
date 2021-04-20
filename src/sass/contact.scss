@@ -1,11 +1,17 @@
 .contact {
   text-align: center;
+  background-color: white;
   .bg {
     height: 14vh;
   }
   .container {
     background: white;
-    height: 61vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
     .item {
       color: var(--principal);
       text-decoration: none;
@@ -14,7 +20,9 @@
       align-items: center;
       border: 2px solid rgb(236, 236, 236);
       border-radius: 5px;
-      padding: 5px;
+      padding: 5px 0;
+      margin: 10px 0;
+      width: 100%;
       transition: 300ms all;
       h2 {
         font-size: 14px;
@@ -34,5 +42,19 @@
   .social {
     display: flex;
     margin: 0 auto;
+  }
+  @media (min-width: 768px) {
+    height: 50vh;
+    .item {
+      width: 70%;
+    }
+  }
+  @media (min-width: 768px) {
+    height: 52vh;
+    .container {
+      .item {
+        width: 70%;
+      }
+    }
   }
 }

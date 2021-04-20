@@ -17,7 +17,7 @@ html {
 body {
   overflow-x: hidden;
   /* overflow-y: hidden; */
-  font-family: "Balsamiq Sans", cursive;
+  font-family: "Roboto", sans-serif;
   background-color: var(--principal);
   background-image: url("./images/h.jpg");
   background-position: center;
@@ -37,10 +37,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-.title {
-  color: white;
-  font-size: 25px;
-}
 .button {
   color: white;
   background-color: var(--principal);
@@ -58,33 +54,8 @@ body::-webkit-scrollbar-thumb {
   margin-right: 5px;
 }
 
-.bg {
-  width: 100vw;
-  height: 19vh;
-  background-color: var(--principal);
-  display: flex;
-  opacity: 0.9;
-  flex-direction: column;
-  justify-content: flex-end;
-  border-bottom: 5px solid var(--lightblue);
-}
-
-.bg .title {
-  width: 90%;
-  margin: 20px auto;
-}
-
-.image {
-  position: absolute;
-  width: 90vw;
-  text-align: right;
-  margin: auto;
-  margin-top: -50px;
-}
-
-.image img {
-  height: 100px;
-  width: 110px;
-  border-radius: 50%;
-  border: 5px solid var(--lightblue);
+.wrapper {
+  width: 85%;
+  max-width: 600px;
+  margin: 0 auto;
 }

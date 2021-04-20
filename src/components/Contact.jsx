@@ -1,34 +1,18 @@
 import React from "react";
 import "../sass/contact.scss";
-import { Container, makeStyles } from "@material-ui/core";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import MailIcon from "@material-ui/icons/Mail";
-const useStyles = makeStyles(() => ({
-  container: {
-    width: "80vw",
-    height: "100%",
-    backgroundColor: "white",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-evenly",
-  },
+import Title from "./Title.jsx";
+import contact from "../images/contact.png";
 
-  icon: {
-    color: "var(--principal)",
-    margin: "0 5px",
-  },
-}));
 const Contact = () => {
-  const styles = useStyles();
   return (
-    <div className="contact">
-      <div className="bg">
-        <h1 className="title animate__animated animate__fadeIn">CONTACTO</h1>
-      </div>
-      <div className="container animate__animated animate__fadeIn">
-        <Container maxWidth="sm" className={styles.container}>
+    <>
+      <Title title={"CONTACTO"} profile={contact} />
+      <div className="contact">
+        <div className="container wrapper animate__animated animate__fadeIn">
           <a
             target="_blank"
             href="mailto:fernando.altamirano@unmsm.edu.pe"
@@ -61,9 +45,9 @@ const Contact = () => {
             <GitHubIcon />
             <h2>Visita mi GitHub</h2>
           </a>
-        </Container>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -1,11 +1,8 @@
 #portfolio {
-  .image {
-    img {
-      background-color: white;
-    }
-  }
+  background-color: white;
   .container {
-    width: 100%;
+    max-width: 700px;
+    margin: auto;
     .more {
       text-align: center;
       background-color: transparent;
@@ -18,29 +15,7 @@
     }
   }
   .container-projects {
+    padding-top: 40px;
     background-color: white;
-    padding-top: 100px;
-  }
-
-  @media (min-width: 768px) {
-    h1 {
-      margin-left: 2.5em;
-    }
-  }
-  @media (min-width: 1024px) {
-    h1 {
-      margin-left: 7em;
-    }
-    .image {
-      width: 82%;
-    }
-  }
-  @media (min-width: 1440px) {
-    h1 {
-      margin-left: 8em;
-    }
-    .image {
-      width: 88%;
-    }
   }
 }

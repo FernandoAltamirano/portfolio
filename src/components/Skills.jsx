@@ -15,6 +15,7 @@ import team from "../images/team.png";
 import tools from "../images/tools.png";
 import firebase from "../images/firebase.png";
 import Element from "../components/Element.jsx";
+import Title from "./Title.jsx";
 const technologies = [
   {
     title: "HTML 5",
@@ -74,42 +75,39 @@ const softSkills = [
 ];
 const Skills = () => {
   return (
-    <div id="skills">
-      <div className="bg">
-        <h1 className="title animate__animated animate__fadeIn">HABILIDADES</h1>
-      </div>
-      <div className="image animate__animated animate__fadeIn">
-        <img src={tools} alt="" />
-      </div>
-      <div className="content">
-        <div className="section">
-          <h3 className="section-title  animate__animated animate__fadeIn">
-            Tecnologías
-          </h3>
-          <div className="content">
-            {technologies.map((element) => (
-              <Element
-                key={element.title}
-                image={element.image}
-                title={element.title}
-              />
-            ))}
+    <>
+      <Title profile={tools} title={"HABILIDADES"} />
+      <div id="skills">
+        <div className="content wrapper">
+          <div className="section">
+            <h3 className="section-title  animate__animated animate__fadeIn">
+              Tecnologías
+            </h3>
+            <div className="content">
+              {technologies.map((element) => (
+                <Element
+                  key={element.title}
+                  image={element.image}
+                  title={element.title}
+                />
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="section">
-          <h3 className="section-title">Habilidades Blandas</h3>
-          <div className="content">
-            {softSkills.map((element) => (
-              <Element
-                key={element.title}
-                image={element.image}
-                title={element.title}
-              />
-            ))}
+          <div className="section">
+            <h3 className="section-title">Habilidades Blandas</h3>
+            <div className="content">
+              {softSkills.map((element) => (
+                <Element
+                  key={element.title}
+                  image={element.image}
+                  title={element.title}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
