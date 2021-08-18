@@ -4,10 +4,17 @@ import Project from "./Project.jsx";
 import portfolio from "../images/portfolio.png";
 import game from "../images/game.png";
 import todo from "../images/todo.png";
+import bmi from "../images/bmi.png";
 import amazon from "../images/amazon.png";
 import dashboard from "../images/dashboard.png";
 import Title from "./Title.jsx";
 const projects = [
+  {
+    title: "BMI Calculator",
+    linkProject: "https://fernandoaltamirano.github.io/calculatorBMI/",
+    linkCode: "https://github.com/FernandoAltamirano/calculatorBMI",
+    image: bmi,
+  },
   {
     title: "Amazon Clone",
     linkProject: "https://clone-46db0.web.app",
@@ -26,12 +33,12 @@ const projects = [
     linkCode: "https://github.com/FernandoAltamirano/rock-paper-scissors",
     image: game,
   },
-  {
-    title: "ToDo App",
-    linkProject: "https://todoapp-fernando.herokuapp.com",
-    linkCode: "https://github.com/FernandoAltamirano/todo-app",
-    image: todo,
-  },
+  // {
+  //   title: "ToDo App",
+  //   linkProject: "https://todoapp-fernando.herokuapp.com",
+  //   linkCode: "https://github.com/FernandoAltamirano/todo-app",
+  //   image: todo,
+  // },
 ];
 const Portfolio = () => {
   return (
